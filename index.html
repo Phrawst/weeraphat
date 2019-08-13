@@ -1,0 +1,64 @@
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+ <head>
+ 	<meta charset="utf-8">
+ 	<title>Stock Test</title>
+ 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+ 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+ </head>
+ <body>
+ <div class="container" name="stock_base">
+ 	<h2 align="center">Stock</h2>
+ 	<form id="addForm">
+ 		<div class="form-group">
+ 		<label>In Stock:</label>
+ 		<input type="text" name="InStock" placeholder="Number of parts in stock" class="form-control">
+ 		</div>
+ 		<div class="form-group">
+ 		<label>Part Name:</label>
+ 		<input type="text" name="name" placeholder="Part Names" class="form-control">
+ 		</div> 
+ 		<div class="form-group">
+ 		<label>Product ID:</label>
+ 		<input type="text" name="ProdId" placeholder="Product Id" class="form-control">
+ 		</div>
+ 		<div class="form-group">
+ 			<button class="btn btn-primary" id="Add Part">Add Part</button>
+ 		</div>
+ 	</form>
+ 	<table class="table table-bordered" id="tbresult">
+ 		<tr>
+ 			<th>In Stock</th>
+ 			<th>Part Name</th>
+ 			<th>Product ID</th>
+
+ 		</tr>
+ 	</table>
+ </div>
+ </body>
+ <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/6.3.5/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#config-web-app -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyD_j1a3Sc5tbtkWh72MdbcuWDEVaZrfRaE",
+    authDomain: "testproj-212714.firebaseapp.com",
+    databaseURL: "https://testproj-212714.firebaseio.com",
+    projectId: "testproj-212714",
+    storageBucket: "testproj-212714.appspot.com",
+    messagingSenderId: "1007914611198",
+    appId: "1:1007914611198:web:477278f98a92e6e4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<script src="stock.js"></script>
+ </html>
